@@ -1,8 +1,8 @@
 
 # Machine Learning Models Comparison in Python
 
-The aim of this repository is to compound comparisons between machine learning algorithms.
-This coul provide a general view of what model could be more suited to a given problem or dataset.
+The aim of this repository is to compound comparisons between machine learning algorithms,
+helping with a general idea of what model could be more suited to a given problem or dataset.
 
 
 The results of this study will be published on my personal
