@@ -1,4 +1,3 @@
-
 # Machine Learning Models Comparison in Python
 
 The aim of this repository is to compound comparisons between machine learning algorithms,
@@ -7,11 +6,12 @@ helping with a general idea of what model could be more suited to a given proble
 
 The results of this study will be published on my personal
 [blog](https://gabrielarscp.wixsite.com/gabsdatascience/blog).
+
 ## Roadmap
 
 - Use cookiecutter-data-science template. 
 - Define ML problems that will be tackle (Regression, Classification, Clustering, Association).
-- Define order to approach the problems (1. Clustering).
+- Tackle one ML approach at a time.
 - Collect different dataset with the necessary characteristics to analyse with machine learning algorithm type.  
 - Define methods to study and then analyze datasets.
 - Compare results evaluating with different metrics. 
@@ -19,10 +19,9 @@ The results of this study will be published on my personal
 ## Python Stack
 
 **Math & Machine Learning:** sklearn, numpy, scipy
-
 **Data Manipulation:** pandas
-
 **Visualization:** mathplotlib, plotly
+
 ## File Description
 To structure my project I have followed the *Cookiecutter* template.
 
@@ -60,9 +59,6 @@ To structure my project I have followed the *Cookiecutter* template.
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://gabrielarscp.wixsite.com/gabsdatascience/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gabrielasanta/)
 
-
-[Go to top](#TOP)
-## Summary
 ## Usage/Examples
 
 ```python
@@ -75,3 +71,4 @@ cc.eval()           # Evaluates metrics on algorithms performance
 
 ```
 
+[Go to top](#TOP)
