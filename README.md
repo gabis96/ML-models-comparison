@@ -33,9 +33,9 @@ To structure my project I have followed the *Cookiecutter* template.
         - **paris_social_housing_meanshift.csv**
         - **paris_social_housing_meanshift_centroids.csv**
         - **paris_social_housing_meanshift_map.csv**
-    - **processed**:
+    - **processed**: folder containing processed data.
         - **paris_social_housing.csv**: data after cleaning and filtering important feature.
-    - **raw**:
+    - **raw**: folder containing raw data.
         - **CONTOURS-IRIS_D075.dbf**: database containing data of Paris map. 
         - **CONTOURS-IRIS_D075.shp**: shapefile data of Paris map. 
         - **famillie_2014.csv**: public census data of Paris families.
@@ -52,7 +52,7 @@ To structure my project I have followed the *Cookiecutter* template.
     - **clustering_analysis.ipynb**: notebook for analysing data using clustering algorithms.
 - **src**: folder storing all python code. 
     - **clustering.py**: file comprising exampled data for clustering and algorithms comparison. 
-    - **visualization.py**: file used for create mapfrom database.
+    - **visualization.py**: file used to plot results.
 - **requierements.py**: python dependencies.
 
 ## 🔗 Links
