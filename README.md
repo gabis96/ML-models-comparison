@@ -26,21 +26,7 @@ The results of this study will be published on my personal
 To structure my project I have followed the *Cookiecutter* template.
 
 - **data**: folder containing all data files.
-    - **final**: folder containing final datasets.
-        - **paris_social_housing_kmeans.csv**
-        - **paris_social_housing_kmeans_centroids.csv**
-        - **paris_social_housing_kmeans_map.csv**
-        - **paris_social_housing_meanshift.csv**
-        - **paris_social_housing_meanshift_centroids.csv**
-        - **paris_social_housing_meanshift_map.csv**
-    - **processed**: folder containing processed data.
-        - **paris_social_housing.csv**: data after cleaning and filtering important feature.
-    - **raw**: folder containing raw data.
-        - **CONTOURS-IRIS_D075.dbf**: database containing data of Paris map. 
-        - **CONTOURS-IRIS_D075.shp**: shapefile data of Paris map. 
-        - **famillie_2014.csv**: public census data of Paris families.
-        - **population_2014.csv**: public census data of Paris population.
-        - **revenue_2014.csv**: public census data of Paris revenue.
+    -   
 - **models**: folder containing models definitions.
     - **association**: folder containing association algorithms
     - **classification**: folder containing classification algorithms
@@ -50,6 +36,7 @@ To structure my project I have followed the *Cookiecutter* template.
     - **regression**: folder containing regression algorithms
 - **notebooks**: folder containing notebooks.
     - **clustering_analysis.ipynb**: notebook for analysing data using clustering algorithms.
+    - **regression_analysis.ipynb**: notebook for analysing data using clustering algorithms.
 - **src**: folder storing all python code. 
     - **clustering.py**: file comprising exampled data for clustering and algorithms comparison. 
     - **visualization.py**: file used to plot results.
