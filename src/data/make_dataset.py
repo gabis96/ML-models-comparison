@@ -52,6 +52,7 @@ def main(input_filepath, output_filepath):
 
     # Merge df concating rows, keeping all columns and having nan where the column does not exist
     df = pd.concat([df_2015, df_2016, df_2017, df_2018, df_2019, df_2020, df_2021, df_2022], ignore_index = True, sort = False)
+    df = df[['Year', 'Country', 'Dystopia Residual', 'Happiness Rank', 'Freedom', 'Generosity', 'Healthy life expectancy', 'Perceptions of corruption', 'GDP per capita', 'Social support']] # sort ds
                             
     # CLEAN DATA
     # Validate Country names
