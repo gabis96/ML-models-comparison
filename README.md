@@ -1,27 +1,39 @@
 Regression Models on World Happiness
 ==============================
 
-This project uses regression to tackle various problems and interesting analysis in the World Happiness dataset, extending the current available work online. Several regression models arre apply, evaluated and compare. 
+This project uses regression to tackle various missing values imputation and predictive analysis in the World Happiness dataset, extending the current available work online. Several regression models are apply, evaluated and compare. 
 The results of this study will be published on my personal
 [blog](https://gabrielarscp.wixsite.com/gabsdatascience/blog).
 
 ## Roadmap
 
-- Use cookiecutter-data-science template. 
-- Define ML problems that will be tackle (Regression, Classification, Clustering, Association).
-- Tackle one ML approach at a time.
-- Collect different dataset with the necessary characteristics.  
-- Define methods to study and then analyze datasets.
-- Compare results evaluating with appropiate metrics. 
+- Collect World Happiness datasets from the last years.
+- Curate old datasets and homogenize fields to unify all sources in one.
+- Check for faulsy values.
+- Try imputing missing values with various techniques, and apply the best one.
+- Do exploratory data analysis and analyze:
+    - Correlation between variables (Identify highest correlated variables).
+    - Category with higher impact in the Happiness Score.
+    - Distribution of Happiness Score.
+    - Top/bottom 10 countries in the podium for the last 8 years.
+    - Top/bottom 10%til countries in happiness.
+    - Overall best performing country in each category by average.
+- Do predictive extrapolation using regression on the data and analyze:
+    - Rank in 2023
+    - Which country is on it’s way to becoming the first Utopia? (9.0) 
+    - Which country is on it’s way to becoming the first Dystopia? (1.0)
+- Compare results evaluating models with appropiate metrics. 
 
 ## Python Stack
 
 **Math & Machine Learning:** sklearn, numpy, scipy
-**Data Manipulation:** pandas
-**Visualization:** mathplotlib, plotly
 
-File Description
-------------
+**Data Manipulation:** pandas
+
+**Visualization:** mathplotlib, seaborn
+
+## File Description
+
 To structure my project I have followed the *Cookiecutter* template.
 
     ├── LICENSE
@@ -35,17 +47,18 @@ To structure my project I have followed the *Cookiecutter* template.
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
+    ├── notebooks          <- Jupyter notebooks
+    │   ├── 1.data_wrangling.ipynb            <- Data with results.
+    │   ├── 2.feature_engineering.ipynb       <- Intermediate data that has been transformed.
+    │   ├── 3.exploratory_analysis.ipynb      <- The data sets for modeling.
+    │   └── 4.prediction_2023.ipynb           <- The original, immutable data dump.
     │
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── figures        <- Generated graphics and figures to be used in reporting
     │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
+    ├── requirements.txt   <- The requirements file for reproducing the analysis environment
     │
     ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
     ├── src                <- Source code for use in this project.
@@ -66,6 +79,14 @@ To structure my project I have followed the *Cookiecutter* template.
     │       └── visualize.py
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+
+## Results
+
+## Future Work
+- EDA: 
+    - Identify if population size and Happiness Score are correlated.
+    - Identify if country's continent and Happiness Score are correlated.
+    - Identify if there is causal effect between Happiness Score and Wealth/Health.
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://gabrielarscp.wixsite.com/gabsdatascience/)
