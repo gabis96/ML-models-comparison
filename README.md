@@ -1,7 +1,8 @@
 Regression Models on World Happiness
 ==============================
 
-This project uses regression to tackle various missing values imputation and predictive analysis in the World Happiness dataset, extending the current available work online. Several regression models are apply, evaluated and compare. 
+This project curates and unifies all World Happiness datasets, including the last year. Regression is used to tackle missing values imputation and predictive analysis for extrapolating 2023-behaviour. Several regression models are apply, evaluated and compare. It surely extends the current work available online. 
+
 The results of this study will be published on my personal
 [blog](https://gabrielarscp.wixsite.com/gabsdatascience/blog).
 
@@ -30,7 +31,7 @@ The results of this study will be published on my personal
 
 **Data Manipulation:** pandas
 
-**Visualization:** mathplotlib, seaborn
+**Visualization:** mathplotlib, seaborn (newest interface objects), geopandas
 
 ## File Description
 
@@ -48,17 +49,17 @@ To structure my project I have followed the *Cookiecutter* template.
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
     ├── notebooks          <- Jupyter notebooks
-    │   ├── 1.data_wrangling.ipynb            <- Data with results.
-    │   ├── 2.feature_engineering.ipynb       <- Intermediate data that has been transformed.
-    │   ├── 3.exploratory_analysis.ipynb      <- The data sets for modeling.
-    │   └── 4.prediction_2023.ipynb           <- The original, immutable data dump.
+    │   ├── 1.data_wrangling.ipynb          
+    │   ├── 2.feature_engineering.ipynb     
+    │   ├── 3.exploratory_analysis.ipynb     
+    │   └── 4.prediction_2023.ipynb
     │
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── figures        <- Generated graphics and figures to be used in reporting
     │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment
+    ├── requirements.txt   <- The requirements file for reproducing the analysis environment (pip freeze > requirements.txt)
     │
     ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
     ├── src                <- Source code for use in this project.
