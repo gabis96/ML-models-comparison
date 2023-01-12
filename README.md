@@ -12,7 +12,7 @@ The results of this study will be published on my personal
 - Curate old datasets and homogenize fields to unify all sources in one.
 - Check for faulsy values.
 - Try imputing missing values with various techniques, and apply the best one.
-- Do exploratory data analysis and analyze:
+- Do exploratory data analysis and examine:
     - Correlation between variables (Identify highest correlated variables).
     - Category with higher impact in the Happiness Score.
     - Distribution of Happiness Score.
@@ -24,6 +24,7 @@ The results of this study will be published on my personal
     - Which country is on it’s way to becoming the first Utopia? (9.0) 
     - Which country is on it’s way to becoming the first Dystopia? (1.0)
 - Compare results evaluating models with appropiate metrics. 
+- Create infographic.
 
 ## Python Stack
 
@@ -81,13 +82,40 @@ To structure my project I have followed the *Cookiecutter* template.
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
+## Dataset
+The World Happiness Report is a landmark survey of the state of global happiness that ranks 156 countries by how happy their citizens perceive themselves to be. 
+
+Unfortunately, my home country Cuba is not in the countries analized. 
+
+Name: World Happiness Report
+Source: https://www.kaggle.com/datasets/mathurinache/world-happiness-report
+Institution: Gallup World Survey
+Date of data collection: 2022-03 
+
+Name: Countries geolocation data
+Source: https://gadm.org/download_country.html
+Date of data collection: 2023-01 
+
+### Factors that explain the Happiness Score
+The Happiness Score is explained by the following factors:
+
+GDP per capita
+Healthy Life Expectancy
+Social support
+Freedom to make life choices
+Generosity
+Corruption Perception
+Residual error
+
 ## Results
 
 ## Future Work
 - EDA: 
     - Identify if population size and Happiness Score are correlated.
-    - Identify if country's continent and Happiness Score are correlated.
     - Identify if there is causal effect between Happiness Score and Wealth/Health.
+
+## Last Update
+[2022-01-15] by [Gabriela Rodriguez]
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://gabrielarscp.wixsite.com/gabsdatascience/)
