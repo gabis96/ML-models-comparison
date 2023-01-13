@@ -19,18 +19,18 @@ The results of this study will be published on my personal
     - Top/bottom 10 countries in the podium for the last 8 years.
     - Top/bottom 10%til countries in happiness.
     - Overall best performing country in each category by average.
-- Do predictive extrapolation using regression on the data and analyze:
+- Do predictive extrapolation using regression on the data and analyze (Future Work):
     - Rank in 2023
     - Which country is on it’s way to becoming the first Utopia? (9.0) 
     - Which country is on it’s way to becoming the first Dystopia? (1.0)
-- Compare results evaluating models with appropiate metrics. 
+- Compare results evaluating models with appropiate metrics (Future Work). 
 - Create infographic.
 
 ## Python Stack
 
 **Math & Machine Learning:** sklearn, numpy, scipy
 
-**Data Manipulation:** pandas
+**Data Manipulation:** pandas (for datasets), requests (for scrapping from the web)
 
 **Visualization:** mathplotlib, seaborn (newest interface objects), geopandas
 
@@ -39,15 +39,15 @@ The results of this study will be published on my personal
 To structure my project I have followed the *Cookiecutter* template.
 
     ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
+    <!-- ├── Makefile           <- Makefile with commands like `make data` or `make train` -->
     ├── README.md          <- The top-level README for developers using this project.
     ├── data
-    │   ├── external       <- Data with results.
+    │   ├── maps           <- Geo data.
     │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The data sets for modeling.
     │   └── raw            <- The original, immutable data dump.
     │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    <!-- ├── models             <- Trained and serialized models, model predictions, or model summaries -->
     │
     ├── notebooks          <- Jupyter notebooks
     │   ├── 1.data_wrangling.ipynb          
@@ -60,14 +60,14 @@ To structure my project I have followed the *Cookiecutter* template.
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── figures        <- Generated graphics and figures to be used in reporting
     │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment (pip freeze > requirements.txt)
     │
     ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
     ├── src                <- Source code for use in this project.
     │   ├── __init__.py    <- Makes src a Python module
     │   │
-    │   ├── data           <- Scripts to download or generate data
+    │   ├── data           <- Scripts generate dataset
     │   │   └── make_dataset.py
+    │   │   └── wh_dataset.py
     │   │
     │   ├── features       <- Scripts to turn raw data into features for modeling
     │   │   └── build_features.py
@@ -80,7 +80,7 @@ To structure my project I have followed the *Cookiecutter* template.
     │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
     │       └── visualize.py
     │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    └── requirements.txt   <- The requirements file for reproducing the analysis environment (pip freeze > requirements.txt)
 
 ## Dataset
 The World Happiness Report is a landmark survey of the state of global happiness that ranks 156 countries by how happy their citizens perceive themselves to be. 
@@ -111,7 +111,7 @@ Residual error
 
 ## Future Work
 - EDA: 
-    - Identify if population size and Happiness Score are correlated.
+    - Examine if population size and Happiness Score are correlated.
     - Identify if there is causal effect between Happiness Score and Wealth/Health.
 
 ## Last Update

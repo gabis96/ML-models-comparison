@@ -6,7 +6,7 @@ from dotenv import find_dotenv, load_dotenv
 import pandas as pd
 import os
 
-from src.data.data_class import WorldHappinessDS
+from src.data.wh_dataset import WorldHappinessDS
 
 
 @click.command()
