@@ -82,30 +82,29 @@ To structure my project I have followed the *Cookiecutter* template.
     │
     └── requirements.txt   <- The requirements file for reproducing the analysis environment (pip freeze > requirements.txt)
 
-## Dataset
+## Datasets
+### World Happiness
 The World Happiness Report is a landmark survey of the state of global happiness that ranks 156 countries by how happy their citizens perceive themselves to be. 
 
 Unfortunately, my home country Cuba is not in the countries analized. 
 
 Name: World Happiness Report
-Source: https://www.kaggle.com/datasets/mathurinache/world-happiness-report
-Institution: Gallup World Survey
-Date of data collection: 2022-03 
 
+*Source*: https://www.kaggle.com/datasets/mathurinache/world-happiness-report
+
+*Institution*: Gallup World Survey
+
+*Date*: 2022-03 
+
+#### Factors that explain the Happiness Score
+The Happiness Score is explained by the following factors: GDP per capita, Healthy Life Expectancy, Social support, Freedom to make life choices, Generosity, Corruption Perception, Residual error
+
+### Geolocation
 Name: Countries geolocation data
+
 Source: https://gadm.org/download_country.html
+
 Date of data collection: 2023-01 
-
-### Factors that explain the Happiness Score
-The Happiness Score is explained by the following factors:
-
-GDP per capita
-Healthy Life Expectancy
-Social support
-Freedom to make life choices
-Generosity
-Corruption Perception
-Residual error
 
 ## Results
 
