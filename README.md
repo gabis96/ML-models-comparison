@@ -11,7 +11,10 @@ The results of this study will be published on my personal
 - Collect World Happiness datasets from the last years.
 - Curate old datasets and homogenize fields to unify all sources in one.
 - Check for faulsy values.
-- Try imputing missing values with various techniques, and apply the best one.
+- Impute missing values
+    - Try out various regression techniques
+    - Compare techniques looking at distributions or doing cross validation.
+    - Apply the best one.
 - Do exploratory data analysis and examine:
     - Correlation between variables (Identify highest correlated variables).
     - Category with higher impact in the Happiness Score.
@@ -19,7 +22,7 @@ The results of this study will be published on my personal
     - Top/bottom 10 countries in the podium for the last 8 years.
     - Top/bottom 10%til countries in happiness.
     - Overall best performing country in each category by average.
-- Do predictive extrapolation using regression on the data and analyze (Future Work):
+- Do predictive extrapolation using time series on the data and analyze (Future Work):
     - Rank in 2023
     - Which country is on it’s way to becoming the first Utopia? (9.0) 
     - Which country is on it’s way to becoming the first Dystopia? (1.0)
@@ -112,9 +115,10 @@ Date of data collection: 2023-01
 - EDA: 
     - Examine if population size and Happiness Score are correlated.
     - Identify if there is causal effect between Happiness Score and Wealth/Health.
+- Time series Prediction
 
 ## Last Update
-[2022-01-15] by [Gabriela Rodriguez]
+[2022-01-16] by [Gabriela Rodriguez]
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://gabrielarscp.wixsite.com/gabsdatascience/)
