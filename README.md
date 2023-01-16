@@ -22,6 +22,7 @@ The results of this study will be published on my personal
     - Top/bottom 10 countries in the podium for the last 8 years.
     - Top/bottom 10%til countries in happiness.
     - Overall best performing country in each category by average.
+- Comparison between regression models
 - Do predictive extrapolation using time series on the data and analyze (Future Work):
     - Rank in 2023
     - Which country is on it’s way to becoming the first Utopia? (9.0) 
@@ -31,7 +32,7 @@ The results of this study will be published on my personal
 
 ## Python Stack
 
-**Math & Machine Learning:** sklearn, numpy, scipy
+**Math & Machine Learning:** sklearn, numpy
 
 **Data Manipulation:** pandas (for datasets), requests (for scrapping from the web)
 
@@ -42,7 +43,6 @@ The results of this study will be published on my personal
 To structure my project I have followed the *Cookiecutter* template.
 
     ├── LICENSE
-    <!-- ├── Makefile           <- Makefile with commands like `make data` or `make train` -->
     ├── README.md          <- The top-level README for developers using this project.
     ├── data
     │   ├── maps           <- Geo data.
@@ -50,19 +50,19 @@ To structure my project I have followed the *Cookiecutter* template.
     │   ├── processed      <- The data sets for modeling.
     │   └── raw            <- The original, immutable data dump.
     │
-    <!-- ├── models             <- Trained and serialized models, model predictions, or model summaries -->
-    │
     ├── notebooks          <- Jupyter notebooks
     │   ├── 1.data_wrangling.ipynb          
     │   ├── 2.feature_engineering.ipynb     
     │   ├── 3.exploratory_analysis.ipynb     
-    │   └── 4.prediction_2023.ipynb
+    │   └── 4.regression_models.ipynb
+    │   └── 5.prediction_2023.ipynb
+    │   └── 6.visualization.ipynb
     │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    ├── references         <- explanatory materials.
     │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+    ├── reports            <- Generated analysis as HTML, PDF, png, LaTeX, etc.
     │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
+    │   └── maps           <- Generated maps to be used in reporting
     │
     ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
     ├── src                <- Source code for use in this project.
@@ -72,18 +72,17 @@ To structure my project I have followed the *Cookiecutter* template.
     │   │   └── make_dataset.py
     │   │   └── wh_dataset.py
     │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
+    │   ├── features       <- Scripts to turn raw data into features 
     │   │   └── build_features.py
     │   │
     │   ├── models         <- Scripts to train models and then use trained models to make
     │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
+    │   │   ├── regressors.py
     │   │
     │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
     │       └── visualize.py
     │
-    └── requirements.txt   <- The requirements file for reproducing the analysis environment (pip freeze > requirements.txt)
+    └── requirements.txt   <- The requirements file for reproducing the analysis environment 
 
 ## Datasets
 ### World Happiness
@@ -110,6 +109,20 @@ Source: https://gadm.org/download_country.html
 Date of data collection: 2023-01 
 
 ## Results
+- Data Wrangling Stage:
+    - Unified source for all years - World Happiness index datasets.
+    - Includes happiness score, rank, year, country, region, and features that explain happiness.
+- EDA Insights:
+    - Happiness Score is highly correlated to GDP, social support and healthy life expectancy. 
+    - Most countries are happy.
+    - Happines tends to grow each year very slowly.
+    - The happiest regions in order are: Australia and New Zealand, North America and Western Europe.
+    - The unhappiest regions are Southern Asia and Sub-Saharan Africa.
+    - The happiest counrtries are Finland, Denmark, Switzerland, Norway, Iceland.
+    - The unhappiest countries are Rwanda, Tanzania, Afghanistan.
+- Regression models:
+    - Linear Regression shows better performance forthe data.
+    - Regression Forest would be second place.
 
 ## Future Work
 - EDA: 
@@ -127,3 +140,7 @@ Date of data collection: 2023-01
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+<!-- ├── Makefile           <- Makefile with commands like `make data` or `make train` -->
+<!-- ├── models             <- Trained and serialized models, model predictions, or model summaries -->
+<!-- (pip freeze > requirements.txt) -->
