@@ -1,7 +1,9 @@
 Regression Models on World Happiness
 ==============================
 
-This project curates and unifies all World Happiness datasets, including the last year. Regression is used to tackle missing values imputation and predictive analysis for extrapolating 2023-behaviour. Several regression models are apply, evaluated and compare. It surely extends the current work available online. 
+This project curates and unifies all World Happiness datasets, including the one from last year. An extensive data cleaning process is done, and afterwards exploratory analysis is used to find insights from the data. Regression is used to tackle missing values imputation and build predictive models, these are evaluated and compared. 
+
+This repository extends the current work available online and aims to predict World Happiness for 2023. 
 
 The results of this study will be published on my personal
 [blog](https://gabrielarscp.wixsite.com/gabsdatascience/blog).
