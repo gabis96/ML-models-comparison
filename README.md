@@ -13,8 +13,8 @@ The results of this study will be published on my personal
 - Collect World Happiness datasets from the last years.
 - Curate old datasets and homogenize fields to unify all sources in one.
 - Check for faulsy values.
-- Impute missing values
-    - Try out various regression techniques
+- Impute missing values.
+    - Try out various regression techniques.
     - Compare techniques looking at distributions or doing cross validation.
     - Apply the best one.
 - Do exploratory data analysis and examine:
@@ -24,21 +24,23 @@ The results of this study will be published on my personal
     - Top/bottom 10 countries in the podium for the last 8 years.
     - Top/bottom 10%til countries in happiness.
     - Overall best performing country in each category by average.
-- Comparison between regression models
+    - Evaluate regions performance in each category by average.
+- Comparison between regression models.
+- Build predictive models using regression.
+    - Compare results evaluating with appropiate metrics. 
 - Do predictive extrapolation using time series on the data and analyze (Future Work):
     - Rank in 2023
-    - Which country is on it’s way to becoming the first Utopia? (9.0) 
-    - Which country is on it’s way to becoming the first Dystopia? (1.0)
-- Compare results evaluating models with appropiate metrics (Future Work). 
+    - Which country is on it’s way to becoming the first Utopia? (>9.0) 
+    - Which country is on it’s way to becoming the first Dystopia? (<1.0)
 - Create infographic.
 
 ## Python Stack
 
-**Math & Machine Learning:** sklearn, numpy
+**Math & Machine Learning:** sklearn, numpy.
 
-**Data Manipulation:** pandas (for datasets), requests (for scrapping from the web)
+**Data Manipulation:** pandas (for datasets), requests (for scrapping from the web).
 
-**Visualization:** mathplotlib, seaborn (newest interface objects), geopandas
+**Visualization:** mathplotlib, seaborn (newest interface 'objects'), geopandas.
 
 ## File Description
 
@@ -56,30 +58,34 @@ To structure my project I have followed the *Cookiecutter* template.
     │   ├── 1.data_wrangling.ipynb          
     │   ├── 2.feature_engineering.ipynb     
     │   ├── 3.exploratory_analysis.ipynb     
-    │   └── 4.regression_models.ipynb
-    │   └── 5.prediction_2023.ipynb
-    │   └── 6.visualization.ipynb
+    │   ├── 4.regression_models.ipynb
+    │   ├── 5.prediction_2023.ipynb
+    │   └── 6.maps_visualization.ipynb
     │
-    ├── references         <- explanatory materials.
+    ├── references         <- Explanatory materials.
     │
     ├── reports            <- Generated analysis as HTML, PDF, png, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
+    │   ├── figures        <- Generated graphics and figures to be used in reporting
     │   └── maps           <- Generated maps to be used in reporting
     │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+    ├── setup.py           <- Makes project pip installable (pip install -e .) so src can be imported
     ├── src                <- Source code for use in this project.
     │   ├── __init__.py    <- Makes src a Python module
     │   │
     │   ├── data           <- Scripts generate dataset
-    │   │   └── make_dataset.py
+    │   │   ├── make_dataset.py
     │   │   └── wh_dataset.py
     │   │
     │   ├── features       <- Scripts to turn raw data into features 
-    │   │   └── build_features.py
+    │   │   ├── build_features.py
+    │   │   └── impute_missing_data.py
     │   │
     │   ├── models         <- Scripts to train models and then use trained models to make
     │   │   │                 predictions
+    │   │   ├── linear_regressors.py
+    │   │   ├── non_linear_regressors.py
     │   │   ├── regressors.py
+    │   │   └── transformers.py
     │   │
     │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
     │       └── visualize.py
@@ -92,7 +98,7 @@ The World Happiness Report is a landmark survey of the state of global happiness
 
 Unfortunately, my home country Cuba is not in the countries analized. 
 
-Name: World Happiness Report
+*Name*: World Happiness Report
 
 *Source*: https://www.kaggle.com/datasets/mathurinache/world-happiness-report
 
@@ -104,11 +110,11 @@ Name: World Happiness Report
 The Happiness Score is explained by the following factors: GDP per capita, Healthy Life Expectancy, Social support, Freedom to make life choices, Generosity, Corruption Perception, Residual error
 
 ### Geolocation
-Name: Countries geolocation data
+*Name*: Countries geolocation data
 
-Source: https://gadm.org/download_country.html
+*Source*: https://gadm.org/download_country.html
 
-Date of data collection: 2023-01 
+*Date*: 2023-01 
 
 ## Results
 - Data Wrangling Stage:
@@ -120,7 +126,7 @@ Date of data collection: 2023-01
     - Happines tends to grow each year very slowly.
     - The happiest regions in order are: Australia and New Zealand, North America and Western Europe.
     - The unhappiest regions are Southern Asia and Sub-Saharan Africa.
-    - The happiest counrtries are Finland, Denmark, Switzerland, Norway, Iceland.
+    - The happiest countries are Finland, Denmark, Switzerland, Norway, Iceland.
     - The unhappiest countries are Rwanda, Tanzania, Afghanistan.
 - Regression models:
     - Linear Regression shows better performance forthe data.
@@ -133,7 +139,7 @@ Date of data collection: 2023-01
 - Time series Prediction
 
 ## Last Update
-[2022-01-16] by [Gabriela Rodriguez]
+2022-01-16 by Gabriela Rodriguez
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://gabrielarscp.wixsite.com/gabsdatascience/)
