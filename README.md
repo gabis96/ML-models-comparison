@@ -1,4 +1,4 @@
-Regression Models on World Happiness
+EDA & Regression Models on World Happiness
 ==============================
 
 This project curates and unifies all World Happiness datasets, including the one from last year. An extensive data cleaning process is done, and afterwards exploratory analysis is used to find insights from the data. Regression is used to tackle missing values imputation and build predictive models, these are evaluated and compared. 
