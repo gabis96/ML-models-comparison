@@ -28,6 +28,7 @@ The results of this study will be published on my personal
 - Comparison between regression models.
 - Build predictive models using regression.
     - Compare results evaluating with appropiate metrics. 
+    - Models tuning.
 - Do predictive extrapolation using time series on the data and analyze (Future Work):
     - Rank in 2023
     - Which country is on it’s way to becoming the first Utopia? (>9.0) 
@@ -134,7 +135,7 @@ The Happiness Score is explained by the following factors: GDP per capita, Healt
     - The happiest countries are Finland, Denmark, Switzerland, Norway, Iceland.
     - The unhappiest countries are Rwanda, Tanzania, Afghanistan.
 - Regression models:
-    - Linear Regression shows better performance forthe data.
+    - Linear Regression shows better performance for the data.
     - Regression Forest would be second place.
 
 ## Future Work
