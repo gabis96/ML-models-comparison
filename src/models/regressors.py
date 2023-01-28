@@ -1,11 +1,13 @@
+from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import LinearRegression
+from sklearn.tree import DecisionTreeRegressor
 from sklearn.linear_model import SGDRegressor
 from sklearn.linear_model import Ridge
 from sklearn.linear_model import Lasso
 from sklearn.svm import SVR
 from sklearn.pipeline import Pipeline
 
-from .regressor import RegressorModel
+from .base import RegressorModel
 
 class LinearRegressionModel(RegressorModel):
     '''Sklearn Linear Regressor Wrapper class'''
@@ -41,10 +43,9 @@ class PolynomialRegressionModel(RegressorModel):
     def __init__(self, preprocessor):
         
         polynomial_regression = Pipeline(
-            steps=[("preprocessor", preprocessor), ("regressor", Lasso())]
+            steps=[("preprocessor", preprocessor), ("regressor", LinearRegression())]
         )
         super().__init__(polynomial_regression)
-
 
 class SGDRegressionModel(RegressorModel):
     '''Sklearn Sctochastic Gradient Descent Regressor Wrapper class'''
@@ -63,3 +64,21 @@ class SVRRegressionModel(RegressorModel):
             steps=[("preprocessor", preprocessor), ("regressor", SVR(kernel='rbf', C=1000000, epsilon=0.001))]
         )
         super().__init__(svr_regression)
+
+class RegressionTreeModel(RegressorModel):
+    '''Sklearn Tree Regressor Wrapper class'''
+    def __init__(self, preprocessor):
+        
+        tree_regression = Pipeline(
+            steps=[("preprocessor", preprocessor), ("regressor", DecisionTreeRegressor(max_depth=2))]
+        )
+        super().__init__(tree_regression)
+
+class RandomForestModel(RegressorModel):
+    '''Sklearn Random Forest Wrapper class'''
+    def __init__(self, preprocessor):
+        
+        randforest_regression = Pipeline(
+            steps=[("preprocessor", preprocessor), ("regressor", DecisionTreeRegressor(max_depth=2))]
+        )
+        super().__init__(randforest_regression)

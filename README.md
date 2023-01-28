@@ -1,7 +1,7 @@
 EDA & Regression Models on World Happiness
 ==============================
 
-This project curates and unifies all World Happiness datasets, including the one from last year. An extensive data cleaning process is done, and afterwards exploratory analysis is used to find insights from the data. Regression is used to tackle missing values imputation and build predictive models, these are evaluated and compared. 
+This project curates and unifies all World Happiness datasets, including the last one available from 2022. An extensive data cleaning process is done, and afterwards exploratory analysis is used to find insights from the data. Regression is used to tackle missing values imputation and build predictive models, these are evaluated and compared. 
 
 This repository extends the current work available online and aims to predict World Happiness for 2023. 
 
@@ -41,6 +41,11 @@ The results of this study will be published on my personal
 **Data Manipulation:** pandas (for datasets), requests (for scrapping from the web).
 
 **Visualization:** mathplotlib, seaborn (newest interface 'objects'), geopandas.
+
+## Data Science Stack
+
+- Data cleaning and feature engineering.
+- Machine Learning: regression algorithms like Linear, Ridge, Lasso, and Polynomial Regression, Stochastic Gradient Descent, SVR, Regression Tree, Random Forest, and Neural Networks. 
 
 ## File Description
 
