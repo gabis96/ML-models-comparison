@@ -43,12 +43,12 @@ The results of this study will be published on my personal
 
 **Visualization:** mathplotlib, seaborn (newest interface 'objects'), geopandas.
 
-## Data Science Stack
+## Data Stack
 
 - Data cleaning and feature engineering.
-- Machine Learning: regression algorithms like Linear, Ridge, Lasso, and Polynomial Regression, Stochastic Gradient Descent, SVR, Regression Tree, Random Forest, and Neural Networks. 
+- Machine learning algorithms: regression algorithms like Linear, Ridge, Lasso, and Polynomial Regression, Stochastic Gradient Descent, SVR, Regression Tree, Random Forest, and Neural Networks. 
 - Model evaluation and tuning.
-- Visualization
+- Visualization plots
 
 ## File Description
 
