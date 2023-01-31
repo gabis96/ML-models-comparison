@@ -47,6 +47,8 @@ The results of this study will be published on my personal
 
 - Data cleaning and feature engineering.
 - Machine Learning: regression algorithms like Linear, Ridge, Lasso, and Polynomial Regression, Stochastic Gradient Descent, SVR, Regression Tree, Random Forest, and Neural Networks. 
+- Model evaluation and tuning.
+- Visualization
 
 ## File Description
 
@@ -137,6 +139,8 @@ The Happiness Score is explained by the following factors: GDP per capita, Healt
 - Regression models:
     - Linear Regression shows better performance for the data.
     - Regression Forest would be second place.
+
+![Infographic](WH.jpg)
 
 ## Future Work
 - EDA: 
