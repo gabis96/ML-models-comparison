@@ -39,7 +39,7 @@ The results of this study will be published on my personal
 
 **Math & Machine Learning:** sklearn, numpy.
 
-**Data Manipulation:** pandas (for datasets), requests (for scrapping from the web).
+**Data Manipulation:** pandas (for datasets), requests (for web scrapping).
 
 **Visualization:** mathplotlib, seaborn (newest interface 'objects'), geopandas.
 
