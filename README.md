@@ -46,9 +46,10 @@ The results of this study will be published on my personal
 ## Data Stack
 
 - Data cleaning and feature engineering.
+- Exploratory data analysis.
 - Machine learning algorithms: regression algorithms like Linear, Ridge, Lasso, and Polynomial Regression, Stochastic Gradient Descent, SVR, Regression Tree, Random Forest, and Neural Networks. 
 - Model evaluation and tuning.
-- Visualization plots
+- Visualization plots.
 
 ## File Description
 
