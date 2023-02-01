@@ -150,7 +150,7 @@ The Happiness Score is explained by the following factors: GDP per capita, Healt
 - Time series Prediction
 
 ## Last Update
-2022-01-16 by Gabriela Rodriguez
+2023-01-16 by Gabriela Rodriguez
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://gabrielarscp.wixsite.com/gabsdatascience/)
